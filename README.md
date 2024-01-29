@@ -10,7 +10,7 @@ https://stackoverflow.com/questions/27083051/matplotlib-xticks-not-lining-up-wit
 
 -----------
 
-Xpert Learning Assistant exchange to properly write  for loop accessing a dataframe:
+## Xpert Learning Assistant exchange to properly write  for loop accessing a dataframe:
 
 why doesnt this code work: for row in tumor_volumes: if ["Drug Regimen"] == "Capomulin": capomulin_tumor.append(["Tumor Volume (mm3)"]) elif ["Drug Regimen"] == "Ramicane": ramicane_tumor.append(["Tumor Volume (mm3)"]) elif ["Drug Regimen"] == "Infubinol": infubinol_tumor.append(["Tumor Volume (mm3)"]) elif ["Drug Regimen"] == "Ceftamin": ceftamin_tumor.append(["Tumor Volume (mm3)"])
 Xpert User Logo
@@ -103,7 +103,7 @@ Make sure to replace tumor_volumes with the actual name of your DataFrame.
 
 ---------
 
-Learning the mask technique from Xpert Learning Assistant to drop undesired rows from a Dataframe:
+## Learning the mask technique from Xpert Learning Assistant to drop undesired rows from a Dataframe:
 
 how do you drop rows from a dataframe if they have a specific value in a column
 Xpert User Logo
@@ -112,16 +112,16 @@ To drop rows from a DataFrame based on a specific value in a column, you can use
 
 import pandas as pd
 
-# Create a sample DataFrame
+### Create a sample DataFrame
 data = {'Name': ['John', 'Alice', 'Bob', 'Jane'],
         'Age': [25, 30, 35, 40],
         'City': ['New York', 'London', 'Paris', 'Tokyo']}
 df = pd.DataFrame(data)
 
-# Drop rows where the 'City' column has the value 'Paris'
+### Drop rows where the 'City' column has the value 'Paris'
 df = df.drop(df[df['City'] == 'Paris'].index)
 
-# Print the updated DataFrame
+### Print the updated DataFrame
 print(df)
 
 
@@ -145,16 +145,16 @@ To drop rows based on a specific value in a column, you can use boolean indexing
 
 import pandas as pd
 
-# Create a sample DataFrame
+### Create a sample DataFrame
 data = {'Name': ['John', 'Alice', 'Bob', 'Jane'],
         'Age': [25, 30, 35, 40],
         'City': ['New York', 'London', 'Paris', 'Tokyo']}
 df = pd.DataFrame(data)
 
-# Drop rows where the 'City' column has the value 'Paris'
+### Drop rows where the 'City' column has the value 'Paris'
 df = df[~(df['City'] == 'Paris')]
 
-# Print the updated DataFrame
+### Print the updated DataFrame
 print(df)
 
 
