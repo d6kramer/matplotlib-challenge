@@ -3,12 +3,10 @@ Module 5 Challenge Repo
 
 For this challenge, the completed submission file is included as "pymaceuticals_final.ipynb."
 
-I have included some commentary in various areas of the final submission to assist with my thought process. This is mostly within the "Quartiles, Outliers, and Boxplots" segment of the assignment.
-
 I have left in my working file (like the last assingment) that includes hashed/commented material, and is not cleaned up for presentation. This is to provide insight to some other thoughts/ideas/experiments conducted while completing the assignment.
 
 
-Resources:
+# Resources:
 
 Fixing the histogram x-ticks alignment:
 
@@ -186,26 +184,24 @@ To change the color of an outlier on a box and whisker plot graph, you can use t
 
 import matplotlib.pyplot as plt
 
-# Generate some sample data
+Generate some sample data
 data = [10, 12, 15, 17, 20, 22, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
 
-# Create a box and whisker plot
+Create a box and whisker plot
 plt.boxplot(data, showfliers=True, flierprops={'marker': 'o', 'markerfacecolor': 'red', 'markersize': 8})
 
-# Set the title and labels
+Set the title and labels
 plt.title("Box and Whisker Plot")
 plt.xlabel("Data")
 plt.ylabel("Values")
 
-# Show the plot
+Show the plot
 plt.show()
 
 
---------------
-
 In this example, the flierprops parameter is used to customize the appearance of the outliers. The 'marker' property is set to 'o' to use a circle marker, 'markerfacecolor' is set to 'red' to change the color to red, and 'markersize' is set to 8 to adjust the size of the marker. You can modify these properties to achieve the desired appearance for the outliers in your box and whisker plot.
 
-
+---------------
 
 I received help from my tutor, Justin, with a cleaner method of calculating final tumor volumes. He explained to me how to change a .groupby into a dataframe using .reset_index(), which allows for a new data merge. This was a much simpler way of approaching the problem than I had worked out on my own.  
 
